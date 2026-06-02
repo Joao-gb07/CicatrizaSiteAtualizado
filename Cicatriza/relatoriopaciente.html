@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="pagina-relatorio-paciente">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicatriza+ - Relatório de Evolução</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação da fonte Montserrat -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-relatorio-paciente">
+
+    <div class="dashboard-wrapper">
+        
+        <!-- BARRA LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand-logo">
+                    <span class="logo-icon">🩹</span>
+                    <h1 class="logo-text">Cicatriza<span class="plus-sign">+</span></h1>
+                </div>
+
+                <div class="user-profile-summary">
+                    <div class="profile-avatar">m</div>
+                    <div class="profile-info">
+                        <p class="user-name">Maria Silva</p>
+                        <p class="user-role">Enfermeira COREN(DF)</p>
+                    </div>
+                </div>
+
+                <nav class="sidebar-menu">
+                    <a href="#" class="menu-item">
+                        <span class="item-icon">🎛️</span> Área de trabalho
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="item-icon">👤➕</span> Cadastrar paciente
+                    </a>
+                    <a href="#" class="menu-item active">
+                        <span class="item-icon">👥</span> Meus pacientes
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="menu-item">
+                    <span class="item-icon">⚙️</span> Configurações
+                </a>
+                <a href="#" class="menu-item logout">
+                    <span class="item-icon">↪️</span> Sair da conta
+                </a>
+            </div>
+        </aside>
+
+        <!-- ÁREA PRINCIPAL DO CONTEÚDO -->
+        <main class="main-content">
+            
+            <header class="page-title">
+                <h2>Relatório de Evolução do Paciente</h2>
+            </header>
+
+            <!-- CARD: NOVO RELATÓRIO -->
+            <section class="form-section-card">
+                <p class="section-label">NOVO RELATÓRIO</p>
+                
+                <form class="evolution-report-form">
+                    <div class="input-group">
+                        <label>DATA DO RELATÓRIO</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label>EVOLUÇÃO GERAL</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label>TAMANHO ATUAL DA FERIDA</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label>TRATAMENTO REALIZADO</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label>OBSERVAÇÕES CLÍNICAS</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-group">
+                        <label>PRÓXIMA AVALIAÇÃO PREVISTA</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </section>
+
+            <!-- SEÇÃO: HISTÓRICO DE EVOLUÇÃO -->
+            <section class="history-section">
+                <p class="section-label">HISTÓRICO DE EVOLUÇÃO</p>
+
+                <div class="history-list">
+                    <!-- Registro 1: Crítica -->
+                    <div class="history-item">
+                        <div class="history-left">
+                            <span class="status-dot red-dot"></span>
+                            <div class="history-details">
+                                <h4>14/04/2025 – CRÍTICA</h4>
+                                <p>ÁREA: 18CM² - EXSUDATO PURULENTO ABUNDANTE, SINAIS INFECCIOSOS PRESENTES. COBERTURA PHMB APLICADA.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registro 2: Estável -->
+                    <div class="history-item">
+                        <div class="history-left">
+                            <span class="status-dot orange-dot"></span>
+                            <div class="history-details">
+                                <h4>10/04/2025 – ESTÁVEL</h4>
+                                <p>ÁREA: 19CM² - MELHORA LEVE NO EXSUDATO. INÍCIO DE DESBRIDAMENTO. ALGINATO DE CÁLCIO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registro 3: Melhora Leve -->
+                    <div class="history-item">
+                        <div class="history-left">
+                            <span class="status-dot green-dot"></span>
+                            <div class="history-details">
+                                <h4>05/04/2025 – MELHORA LEVE</h4>
+                                <p>ÁREA: 19CM² - REDUÇÃO DO EDEMA. TECIDO DE GRANULAÇÃO EMERGINDO NAS BORDAS.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registro 4: 1ª Avaliação -->
+                    <div class="history-item">
+                        <div class="history-left">
+                            <span class="status-dot green-dot"></span>
+                            <div class="history-details">
+                                <h4>01/04/2025 – 1ª AVALIAÇÃO</h4>
+                                <p>ÁREA: 20CM² - DIAGNÓSTICO INICIAL. ÚLCERA POR PRESSÃO GRAU III. NECROSE PRESENTE.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AÇÃO FINAL -->
+            <div class="action-footer">
+                <button type="submit" class="btn-save-report">SALVAR RELATÓRIO</button>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

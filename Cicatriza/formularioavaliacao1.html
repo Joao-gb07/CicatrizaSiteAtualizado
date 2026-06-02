@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="pagina-formulario-avaliacao">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicatriza+ | Formulário de Avaliação de Feridas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+</head>
+<body class="pagina-formulario-avaliacao">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar__logo">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+          <path d="M12 8v8M8 12h8"/>
+        </svg>
+      </div>
+      <span class="logo-text">Cicatriza<span class="logo-plus">+</span></span>
+    </div>
+
+    <div class="sidebar__user">
+      <div class="user-avatar">M</div>
+      <div class="user-info">
+        <span class="user-name">Maria Silva</span>
+        <span class="user-role">Enfermeira COREN(DF)</span>
+      </div>
+    </div>
+
+    <nav class="sidebar__nav">
+      <a href="#" class="nav-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        Área de trabalho
+      </a>
+      <a href="#" class="nav-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          <line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>
+        </svg>
+        Cadastrar paciente
+      </a>
+      <a href="#" class="nav-item active">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Meus pacientes
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="page-header__icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+      </div>
+      <div class="page-header__text">
+        <h1>FORMULÁRIO DE AVALIAÇÃO<br>DE FERIDAS</h1>
+        <p>Registre uma nova ferida e faça o acompanhamento</p>
+      </div>
+      <svg class="page-header__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </div>
+
+    <form class="form" novalidate>
+
+      <!-- SECTION 1: Patient Identification -->
+      <section class="form-section" id="section-1">
+        <h2 class="section-title">1. IDENTIFICAÇÃO DO PACIENTE</h2>
+        <div class="form-grid">
+          <div class="field field--wide">
+            <label class="field__label">NOME COMPLETO</label>
+            <input type="text" class="field__input" placeholder="Digite seu nome completo do paciente" />
+          </div>
+          <div class="field field--small">
+            <label class="field__label">IDADE</label>
+            <input type="text" class="field__input" placeholder="Ex: 55 anos" />
+          </div>
+
+          <div class="field field--wide">
+            <label class="field__label">ENDEREÇO</label>
+            <input type="text" class="field__input" placeholder="Rua, número, bairro" />
+          </div>
+          <div class="field field--small">
+            <label class="field__label">NASCIMENTO</label>
+            <input type="text" class="field__input" placeholder="DD/MM/AAAA" />
+          </div>
+
+          <div class="field">
+            <label class="field__label">CPF</label>
+            <input type="text" class="field__input" placeholder="000.000.000-00" />
+          </div>
+          <div class="field">
+            <label class="field__label">GÊNERO</label>
+            <input type="text" class="field__input" placeholder="Ex: Masculino" />
+          </div>
+          <div class="field">
+            <label class="field__label">TELEFONE</label>
+            <input type="text" class="field__input" placeholder="(00) 00000-0000" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Clinical Data -->
+      <section class="form-section" id="section-2">
+        <h2 class="section-title">2. DADOS CLÍNICOS</h2>
+        <div class="form-grid form-grid--single">
+          <div class="field">
+            <label class="field__label">COMORBIDADES</label>
+            <input type="text" class="field__input" placeholder="Ex: Diabetes tipo 2, HAS" />
+          </div>
+          <div class="field">
+            <label class="field__label">MEDICAMENTOS EM USO</label>
+            <input type="text" class="field__input" placeholder="Ex: Metformina 500mg, Losartana" />
+          </div>
+          <div class="field">
+            <label class="field__label">ALERGIAS</label>
+            <input type="text" class="field__input" placeholder='Ex: Penicilina. Se nenhuma, escreva "Nega alergias"' />
+          </div>
+          <div class="field">
+            <label class="field__label">ESTADO NUTRICIONAL</label>
+            <input type="text" class="field__input" placeholder="Ex: Desnutrição leve" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TIME Assessment -->
+      <section class="form-section" id="section-3">
+        <h2 class="section-title">3. AVALIAÇÃO DA FERIDA (TIME)</h2>
+        <div class="form-grid form-grid--single">
+          <div class="field">
+            <label class="field__label">TECIDO (T): GRANULAÇÃO / NECROSE / FIBRINA</label>
+            <input type="text" class="field__input" placeholder="Ex: Granulação 60%, Fibrina 40%" />
+          </div>
+          <div class="field">
+            <label class="field__label">INFECÇÃO (I): PRESENTE / AUSENTE</label>
+            <input type="text" class="field__input" placeholder="Ex: Presente — sinais de calor e exsudato purulento" />
+          </div>
+          <div class="field">
+            <label class="field__label">UMIDADE (M): SECA / BAIXA / MODERADA / ALTA</label>
+            <input type="text" class="field__input" placeholder="Ex: Alta — exsudato abundante" />
+          </div>
+          <div class="field">
+            <label class="field__label">BORDA (E): REGULAR / IRREGULAR / MACERADA</label>
+            <input type="text" class="field__input" placeholder="Ex: Irregular, macerada" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Measurement -->
+      <section class="form-section" id="section-4">
+        <h2 class="section-title">4. MENSURAÇÃO DA FERIDA</h2>
+        <div class="form-grid form-grid--four">
+          <div class="field">
+            <label class="field__label">COMPRIMENTO (cm)</label>
+            <input type="number" class="field__input" placeholder="0 cm" />
+          </div>
+          <div class="field">
+            <label class="field__label">LARGURA (cm)</label>
+            <input type="number" class="field__input" placeholder="0 cm" />
+          </div>
+          <div class="field">
+            <label class="field__label">PROFUNDIDADE (cm)</label>
+            <input type="number" class="field__input" placeholder="0 cm" />
+          </div>
+          <div class="field">
+            <label class="field__label">ÁREA ESTIMADA (cm²)</label>
+            <input type="number" class="field__input" placeholder="0 cm²" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Treatment Plan -->
+      <section class="form-section" id="section-5">
+        <h2 class="section-title">5. PLANO DE TRATAMENTO</h2>
+        <div class="form-grid form-grid--single">
+          <div class="field">
+            <label class="field__label">COBERTURA SUGERIDA</label>
+            <input type="text" class="field__input" placeholder="Ex: Alginato de cálcio + cobertura secundária" />
+          </div>
+          <div class="field">
+            <label class="field__label">MEDICAÇÃO</label>
+            <input type="text" class="field__input" placeholder="Ex: ATB tópico conforme prescrição" />
+          </div>
+          <div class="field">
+            <label class="field__label">FREQUÊNCIA DE TROCA</label>
+            <input type="text" class="field__input" placeholder="Ex: A cada 48h ou se saturar" />
+          </div>
+          <div class="field">
+            <label class="field__label">OBSERVAÇÕES</label>
+            <input type="text" class="field__input" placeholder="Informações adicionais relevantes" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: Evolution -->
+      <section class="form-section" id="section-6">
+        <h2 class="section-title">6. EVOLUÇÃO / REAVALIAÇÃO</h2>
+        <div class="form-grid form-grid--three">
+          <div class="field">
+            <label class="field__label">DATA DA AVALIAÇÃO</label>
+            <input type="text" class="field__input" placeholder="DD/MM/AAAA" />
+          </div>
+          <div class="field">
+            <label class="field__label">PRÓXIMA AVALIAÇÃO</label>
+            <input type="text" class="field__input" placeholder="DD/MM/AAAA" />
+          </div>
+          <div class="field">
+            <label class="field__label">EVOLUÇÃO: MELHORA / ESTÁVEL / PIORA</label>
+            <input type="text" class="field__input" placeholder="000.000.000-00" />
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER: Pagination + Actions -->
+      <div class="form-footer">
+        <div class="progress-bar">
+          <div class="progress-bar__fill"></div>
+        </div>
+        <div class="form-footer__actions">
+          <div class="pagination">
+            <span class="dot dot--active"></span>
+            <span class="dot"></span>
+          </div>
+          <button type="submit" class="btn-continuar">
+            CONTINUAR
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

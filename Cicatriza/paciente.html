@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="pagina-paciente">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicatriza+ | Formulário do Paciente</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+</head>
+<body class="pagina-paciente">
+
+  <!-- ══ SIDEBAR ══════════════════════════════════════════ -->
+  <aside class="sidebar">
+    <div class="sidebar__logo">
+      <div class="logo-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+      </div>
+      <span class="logo-text">Cicatriza<span class="logo-plus">+</span></span>
+    </div>
+
+    <div class="sidebar__user">
+      <div class="user-avatar">M</div>
+      <div class="user-info">
+        <span class="user-name">Maria Silva</span>
+        <span class="user-role">Enfermeira COREN(DF)</span>
+      </div>
+    </div>
+
+    <nav class="sidebar__nav">
+      <a href="#" class="nav-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        Área de trabalho
+      </a>
+      <a href="#" class="nav-item active">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+          <line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/>
+        </svg>
+        Cadastrar paciente
+      </a>
+      <a href="#" class="nav-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        Meus pacientes
+      </a>
+      <div class="nav-divider"></div>
+      <a href="#" class="nav-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        Configurações
+      </a>
+      <a href="#" class="nav-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+          <polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+        Sair do sistema
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ══ MAIN ══════════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="page-header__icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </div>
+      <div class="page-header__text">
+        <h1>FORMULÁRIO DO PACIENTE</h1>
+        <p>Preencha os dados clínicos completos do paciente</p>
+      </div>
+    </div>
+
+    <form class="form" novalidate>
+
+      <!-- ── SECTION: HMP & COMORBIDADES ─────────────────── -->
+      <section class="card" style="--delay:.04s">
+        <h2 class="card__title">HMP &amp; COMORBIDADES</h2>
+        <div class="check-grid check-grid--5">
+          <label class="check-item"><input type="checkbox"><span>HAS</span></label>
+          <label class="check-item"><input type="checkbox"><span>DM1</span></label>
+          <label class="check-item"><input type="checkbox"><span>DPOC</span></label>
+          <label class="check-item"><input type="checkbox"><span>CARDIOPATIA</span></label>
+          <label class="check-item"><input type="checkbox"><span>NEFROPATIA</span></label>
+          <label class="check-item"><input type="checkbox"><span>OBESIDADE</span></label>
+          <label class="check-item"><input type="checkbox"><span>INSUFICIÊNCIA RENAL</span></label>
+          <label class="check-item"><input type="checkbox"><span>DOENÇA VASCULAR AO</span></label>
+          <label class="check-item"><input type="checkbox"><span>ANEMIA</span></label>
+          <label class="check-item"><input type="checkbox"><span>DEPRESSÃO</span></label>
+          <label class="check-item"><input type="checkbox"><span>DOENÇA NEUROLÓGICA</span></label>
+          <label class="check-item"><input type="checkbox"><span>DOENÇA NEUROLÓGICA</span></label>
+          <label class="check-item"><input type="checkbox"><span>DOENÇA AUTOIMUNE</span></label>
+          <label class="check-item"><input type="checkbox"><span>TIREOIDE</span></label>
+          <label class="check-item"><input type="checkbox"><span>HANSENÍASE</span></label>
+        </div>
+        <div class="field field--inline mt-12">
+          <label class="field__label">OUTROS</label>
+          <input type="text" class="field__input" placeholder="Especifique outras comorbidades" />
+        </div>
+      </section>
+
+      <!-- ── SECTION: PERFIL & ESTILO DE VIDA ────────────── -->
+      <section class="card" style="--delay:.08s">
+        <h2 class="card__title">PERFIL E ESTILO DE VIDA</h2>
+        <div class="check-grid check-grid--3">
+          <label class="check-item"><input type="checkbox"><span>TABAGISMO</span></label>
+          <label class="check-item"><input type="checkbox"><span>ETILISMO</span></label>
+          <label class="check-item"><input type="checkbox"><span>SEDENTARISMO</span></label>
+        </div>
+        <div class="field field--inline mt-12">
+          <label class="field__label">PRÁTICA ESPORTIVA</label>
+          <input type="text" class="field__input" placeholder="Ex: Caminhada 3x/semana" />
+        </div>
+        <div class="check-grid check-grid--3 mt-12">
+          <label class="check-item check-item--wide"><input type="checkbox"><span>PRIVAÇÃO DO SONO</span></label>
+          <label class="check-item check-item--wide"><input type="checkbox"><span>ALUNISMO</span></label>
+        </div>
+      </section>
+
+      <!-- ── SECTION: CONDIÇÕES DO MEMBRO ────────────────── -->
+      <section class="card" style="--delay:.12s">
+        <h2 class="card__title">CONDIÇÕES DO MEMBRO</h2>
+        <div class="sub-group">
+          <span class="sub-label">DOR</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>SIM</span></label>
+            <label class="check-item"><input type="checkbox"><span>NÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>PRESENÇA</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSÊNCIA</span></label>
+          </div>
+        </div>
+        <div class="sub-group mt-10">
+          <span class="sub-label">NÚMERO DE RECIDIVAS</span>
+          <div class="check-grid check-grid--3">
+            <label class="check-item"><input type="checkbox"><span>SENSAÇÃO ORAL</span></label>
+            <label class="check-item"><input type="checkbox"><span>DORMÊNCIA/FORMIGAMENTO</span></label>
+          </div>
+        </div>
+        <div class="sub-group mt-10">
+          <span class="sub-label bold-label">ELIMINAÇÕES VESICAIS</span>
+          <div class="check-grid check-grid--2">
+            <label class="check-item"><input type="checkbox"><span>PRESENTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+          </div>
+        </div>
+        <div class="sub-group mt-10">
+          <span class="sub-label bold-label">ELIMINAÇÕES INTESTINAIS</span>
+          <div class="check-grid check-grid--2">
+            <label class="check-item"><input type="checkbox"><span>PRESENTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: MEDICAMENTOS ────────────────────────── -->
+      <section class="card" style="--delay:.16s">
+        <h2 class="card__title">MEDICAMENTOS EM USO</h2>
+        <div class="check-grid check-grid--3">
+          <label class="check-item"><input type="checkbox"><span>HIPOGLICEMIANTES ORAIS</span></label>
+          <label class="check-item"><input type="checkbox"><span>ANTI-HIPERTENSIVOS</span></label>
+          <label class="check-item"><input type="checkbox"><span>ANTICOAGULANTES</span></label>
+          <label class="check-item"><input type="checkbox"><span>IMUNOSSUPRESSORES</span></label>
+          <label class="check-item"><input type="checkbox"><span>DROGAS VASOATIVAS</span></label>
+          <label class="check-item"><input type="checkbox"><span>OUTROS</span></label>
+          <label class="check-item"><input type="checkbox"><span>CORTICOIDES</span></label>
+          <label class="check-item"><input type="checkbox"><span>ANTIBIÓTICO(S)</span></label>
+          <label class="check-item"><input type="checkbox"><span>SUPLEMENTO VITAMÍNICO</span></label>
+        </div>
+        <div class="field field--inline mt-12">
+          <label class="field__label">INSULINA / OUTRO</label>
+          <input type="text" class="field__input" placeholder="Especifique" />
+        </div>
+      </section>
+
+      <!-- ── SECTION: EXAME FÍSICO ────────────────────────── -->
+      <section class="card" style="--delay:.20s">
+        <h2 class="card__title">EXAME FÍSICO</h2>
+        <div class="form-grid form-grid--4">
+          <div class="field">
+            <label class="field__label">PA</label>
+            <input type="text" class="field__input" placeholder="mmHg" />
+          </div>
+          <div class="field">
+            <label class="field__label">TAX</label>
+            <input type="text" class="field__input" placeholder="°C" />
+          </div>
+          <div class="field">
+            <label class="field__label">FC</label>
+            <input type="text" class="field__input" placeholder="bpm" />
+          </div>
+          <div class="field">
+            <label class="field__label">FR</label>
+            <input type="text" class="field__input" placeholder="irpm" />
+          </div>
+          <div class="field">
+            <label class="field__label">ALTURA</label>
+            <input type="text" class="field__input" placeholder="cm" />
+          </div>
+          <div class="field">
+            <label class="field__label">IMC</label>
+            <input type="text" class="field__input" placeholder="kg/m²" />
+          </div>
+          <div class="field">
+            <label class="field__label">SPO2</label>
+            <input type="text" class="field__input" placeholder="%" />
+          </div>
+          <div class="field">
+            <label class="field__label">PESO</label>
+            <input type="text" class="field__input" placeholder="kg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: NUTRIÇÃO / ALIMENTAÇÃO / HIDRATAÇÃO ── -->
+      <section class="card" style="--delay:.24s">
+        <h2 class="card__title">NUTRIÇÃO / ALIMENTAÇÃO / HIDRATAÇÃO</h2>
+
+        <div class="sub-group">
+          <span class="sub-label">NUTRIÇÃO</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>ATIVO</span></label>
+            <label class="check-item"><input type="checkbox"><span>DESNUTRIDO</span></label>
+            <label class="check-item"><input type="checkbox"><span>OBESO</span></label>
+            <label class="check-item"><input type="checkbox"><span>CAQUÉTICO</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">ALIMENTAÇÃO</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>ORAL</span></label>
+            <label class="check-item"><input type="checkbox"><span>TNE/SNE</span></label>
+            <label class="check-item"><input type="checkbox"><span>GASTROSTOMIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>JEJUNOSTOMIA</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">HIDRATADO</span>
+          <div class="check-grid check-grid--2">
+            <label class="check-item"><input type="checkbox"><span>HIDRATADO</span></label>
+            <label class="check-item"><input type="checkbox"><span>DESIDRATADO</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">NÍVEL DE ORIENTAÇÃO</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>ORIENTADO</span></label>
+            <label class="check-item"><input type="checkbox"><span>DESORIENTADO</span></label>
+            <label class="check-item"><input type="checkbox"><span>SONOLENTO</span></label>
+            <label class="check-item"><input type="checkbox"><span>CONFUNDIDO</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">FORÇA MOTORA</span>
+          <div class="check-grid check-grid--6">
+            <label class="check-item"><input type="checkbox"><span>PRESERVADA</span></label>
+            <label class="check-item"><input type="checkbox"><span>DIMINUÍDA</span></label>
+            <label class="check-item"><input type="checkbox"><span>RESTRITA</span></label>
+            <label class="check-item"><input type="checkbox"><span>PARESIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>ATROFIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>PARALISIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>LOCAL</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">LIMITAÇÃO FÍSICA</span>
+          <div class="check-grid check-grid--2">
+            <label class="check-item"><input type="checkbox"><span>DEAMBULAÇÃO AO SOLO</span></label>
+            <label class="check-item"><input type="checkbox"><span>RELATO FORMAL DO DOR</span></label>
+          </div>
+          <div class="check-grid check-grid--2 mt-6">
+            <label class="check-item"><input type="checkbox"><span>DOR À ESTIMULAÇÃO / FRIO</span></label>
+            <label class="check-item"><input type="checkbox"><span>LOCAL</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">PERFUSÃO PERIFÉRICA</span>
+          <div class="check-grid check-grid--3">
+            <label class="check-item"><input type="checkbox"><span>PRESERVADA</span></label>
+            <label class="check-item"><input type="checkbox"><span>DIMINUÍDA</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">PEIA DO PEDIOSO</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>FORTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>FILIFORME</span></label>
+            <label class="check-item"><input type="checkbox"><span>CARDÍACO</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">PULSO TIBIAL POSTERIOR</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>FORTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>FILIFORME</span></label>
+            <label class="check-item"><input type="checkbox"><span>CARDÍACO</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-10">
+          <span class="sub-label">REALIZAÇÃO DOPPLER</span>
+          <div class="form-grid form-grid--3">
+            <div class="field">
+              <label class="field__label">IDB</label>
+              <input type="text" class="field__input" placeholder="valor" />
+            </div>
+            <div class="field">
+              <label class="field__label">DATA DO EXAME</label>
+              <input type="text" class="field__input" placeholder="DD/MM/AAAA" />
+            </div>
+            <div class="field">
+              <label class="field__label">RESULTADO</label>
+              <input type="text" class="field__input" placeholder="resultado" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: EXAMES LABORATORIAIS ───────────────── -->
+      <section class="card" style="--delay:.28s">
+        <h2 class="card__title">EXAMES LABORATORIAIS</h2>
+        <div class="form-grid form-grid--4">
+          <div class="field">
+            <label class="field__label">HEMOGLOBINA GLICADA</label>
+            <input type="text" class="field__input" placeholder="%" />
+          </div>
+          <div class="field">
+            <label class="field__label">GLICEMIA</label>
+            <input type="text" class="field__input" placeholder="mg/dL" />
+          </div>
+          <div class="field">
+            <label class="field__label">LEUCÓCITOS</label>
+            <input type="text" class="field__input" placeholder="cel/mm³" />
+          </div>
+          <div class="field">
+            <label class="field__label">FERRITINA</label>
+            <input type="text" class="field__input" placeholder="ng/mL" />
+          </div>
+          <div class="field">
+            <label class="field__label">HEMOGLOBINA</label>
+            <input type="text" class="field__input" placeholder="g/dL" />
+          </div>
+          <div class="field">
+            <label class="field__label">ALBUMINA</label>
+            <input type="text" class="field__input" placeholder="g/dL" />
+          </div>
+          <div class="field">
+            <label class="field__label">CREATININA</label>
+            <input type="text" class="field__input" placeholder="mg/dL" />
+          </div>
+          <div class="field">
+            <label class="field__label">OUTROS</label>
+            <input type="text" class="field__input" placeholder="especifique" />
+          </div>
+        </div>
+        <div class="form-grid form-grid--3 mt-12">
+          <div class="field">
+            <label class="field__label">COAGULOGRAMA</label>
+            <input type="text" class="field__input" placeholder="resultado" />
+          </div>
+          <div class="field">
+            <label class="field__label">COBRE SÉRICO</label>
+            <input type="text" class="field__input" placeholder="µg/dL" />
+          </div>
+          <div class="field">
+            <label class="field__label">AMINOÁCIDOS</label>
+            <input type="text" class="field__input" placeholder="resultado" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: HISTÓRICO DA LESÃO ─────────────────── -->
+      <section class="card" style="--delay:.32s">
+        <h2 class="card__title">HISTÓRICO DA LESÃO</h2>
+        <div class="sub-group">
+          <span class="sub-label">PERÍODO</span>
+          <div class="check-grid check-grid--4">
+            <label class="check-item"><input type="checkbox"><span>PRIMEIRA VEZ</span></label>
+            <label class="check-item"><input type="checkbox"><span>AGUDO</span></label>
+            <div class="field field--inline">
+              <label class="field__label">Nº DA LESÃO</label>
+              <input type="text" class="field__input field__input--sm" placeholder="ex: 2" />
+            </div>
+          </div>
+          <div class="check-grid check-grid--2 mt-6">
+            <label class="check-item"><input type="checkbox"><span>RECIDIVA</span></label>
+            <label class="check-item"><input type="checkbox"><span>CRÔNICO</span></label>
+          </div>
+        </div>
+
+        <div class="sub-group mt-14">
+          <span class="sub-label">ETIOLOGIA</span>
+          <div class="check-grid check-grid--5 mt-6">
+            <label class="check-item"><input type="checkbox"><span>TROMBÓTICO</span></label>
+            <label class="check-item"><input type="checkbox"><span>ARTERIAL</span></label>
+            <label class="check-item"><input type="checkbox"><span>LCF</span></label>
+            <label class="check-item"><input type="checkbox"><span>INSUFICIÊNCIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>CIRÚRGICA</span></label>
+            <label class="check-item"><input type="checkbox"><span>MISTA</span></label>
+            <label class="check-item"><input type="checkbox"><span>TRAUMÁTICA</span></label>
+            <label class="check-item"><input type="checkbox"><span>DE AMANTE</span></label>
+            <label class="check-item check-item--span2"><input type="checkbox"><span>ÚLCERA DE PRESSÃO / LESÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>INFECCIOSA</span></label>
+            <label class="check-item"><input type="checkbox"><span>TUMOR / NEOPLASIA</span></label>
+            <label class="check-item"><input type="checkbox"><span>FÍSTULA</span></label>
+            <label class="check-item"><input type="checkbox"><span>CRIOGLOBULINA</span></label>
+            <label class="check-item"><input type="checkbox"><span>AUTOIMUNE</span></label>
+            <label class="check-item"><input type="checkbox"><span>OUTROS</span></label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: LOCALIZAÇÃO ─────────────────────────── -->
+      <section class="card" style="--delay:.36s">
+        <h2 class="card__title">LOCALIZAÇÃO</h2>
+        <div class="body-diagram">
+          <!-- Front figure -->
+          <div class="body-figure">
+            <span class="figure-label">ANTERIOR</span>
+            <svg class="body-svg" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Head -->
+              <ellipse cx="50" cy="20" rx="13" ry="16" stroke="#1aa898" stroke-width="1.5" fill="#edfaf9"/>
+              <!-- Neck -->
+              <rect x="45" y="34" width="10" height="8" rx="2" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <!-- Body -->
+              <path d="M32 42 Q28 48 26 60 L26 105 Q26 112 32 112 L68 112 Q74 112 74 105 L74 60 Q72 48 68 42 Z" stroke="#1aa898" stroke-width="1.5" fill="#edfaf9"/>
+              <!-- Left arm -->
+              <path d="M32 45 Q18 55 16 80 Q15 92 18 100" stroke="#1aa898" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <!-- Left hand -->
+              <ellipse cx="18" cy="104" rx="5" ry="8" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <!-- Right arm -->
+              <path d="M68 45 Q82 55 84 80 Q85 92 82 100" stroke="#1aa898" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <!-- Right hand -->
+              <ellipse cx="82" cy="104" rx="5" ry="8" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <!-- Left leg -->
+              <path d="M38 112 L34 155 Q33 168 36 180" stroke="#1aa898" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <!-- Left foot -->
+              <ellipse cx="36" cy="185" rx="7" ry="4" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <!-- Right leg -->
+              <path d="M62 112 L66 155 Q67 168 64 180" stroke="#1aa898" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <!-- Right foot -->
+              <ellipse cx="64" cy="185" rx="7" ry="4" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <!-- Groin split -->
+              <path d="M44 112 L50 130 L56 112" stroke="#1aa898" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <!-- Posterior figure -->
+          <div class="body-figure">
+            <span class="figure-label">POSTERIOR</span>
+            <svg class="body-svg" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="50" cy="20" rx="13" ry="16" stroke="#1aa898" stroke-width="1.5" fill="#edfaf9"/>
+              <rect x="45" y="34" width="10" height="8" rx="2" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <path d="M32 42 Q28 48 26 60 L26 105 Q26 112 32 112 L68 112 Q74 112 74 105 L74 60 Q72 48 68 42 Z" stroke="#1aa898" stroke-width="1.5" fill="#edfaf9"/>
+              <path d="M32 45 Q18 55 16 80 Q15 92 18 100" stroke="#1aa898" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <ellipse cx="18" cy="104" rx="5" ry="8" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <path d="M68 45 Q82 55 84 80 Q85 92 82 100" stroke="#1aa898" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+              <ellipse cx="82" cy="104" rx="5" ry="8" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <path d="M38 112 L34 155 Q33 168 36 180" stroke="#1aa898" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="36" cy="185" rx="7" ry="4" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <path d="M62 112 L66 155 Q67 168 64 180" stroke="#1aa898" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="64" cy="185" rx="7" ry="4" stroke="#1aa898" stroke-width="1.2" fill="#edfaf9"/>
+              <path d="M44 112 L50 130 L56 112" stroke="#1aa898" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SECTION: AVALIAÇÃO DA FERIDA ─────────────────── -->
+      <section class="card" style="--delay:.40s">
+        <h2 class="card__title">AVALIAÇÃO DA FERIDA</h2>
+
+        <!-- Mensuração -->
+        <div class="sub-group">
+          <span class="sub-label">MENSURAÇÃO</span>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>FERIDA PLANA</span></label>
+            <label class="check-item"><input type="checkbox"><span>FERIDA CAVITÁRIA SUPERFICIAL</span></label>
+            <label class="check-item"><input type="checkbox"><span>FERIDA CAVITÁRIA PROFUNDA</span></label>
+          </div>
+        </div>
+
+        <!-- Tecido -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">TECIDO</span>
+          <div class="check-grid check-grid--4 mt-6">
+            <label class="check-item"><input type="checkbox"><span>FIBRINA AÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>GRANULAÇÃO AÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>EPITELIZAÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>GRANULAÇÃO/EXUBERAÇÃO/AÇÃO</span></label>
+          </div>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>NECROSE DE COAGULAÇÃO AÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>FIBRINA AÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>NECROSE DE COAGULAÇÃO/EXUBERAÇÃO/AÇÃO</span></label>
+          </div>
+        </div>
+
+        <!-- Volume de exsudato -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">VOLUME DE EXSUDATO</span>
+          <div class="check-grid check-grid--4 mt-6">
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>BAIXO</span></label>
+            <label class="check-item"><input type="checkbox"><span>MODERADO</span></label>
+            <label class="check-item"><input type="checkbox"><span>ALTO</span></label>
+          </div>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>AUMENTO DE EXSUDAÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>DRENAGE AÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>REDUÇÃO DE EXSUDAÇÃO/EXUBERÂNCIA</span></label>
+          </div>
+        </div>
+
+        <!-- Composição do exsudato -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">COMPOSIÇÃO DO EXSUDATO</span>
+          <div class="check-grid check-grid--5 mt-6">
+            <label class="check-item"><input type="checkbox"><span>SEROSO</span></label>
+            <label class="check-item"><input type="checkbox"><span>PURULENTO</span></label>
+            <label class="check-item"><input type="checkbox"><span>FIBRINOSO</span></label>
+            <label class="check-item"><input type="checkbox"><span>HEMATO/SANGUINOLENTO</span></label>
+            <label class="check-item"><input type="checkbox"><span>SERO/SANGUINOLENTO</span></label>
+          </div>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>SEROPURULENTO</span></label>
+            <label class="check-item"><input type="checkbox"><span>PRÉ-PURULENTO</span></label>
+            <label class="check-item"><input type="checkbox"><span>FECALÓIDE</span></label>
+          </div>
+        </div>
+
+        <!-- Odor -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">ODOR</span>
+          <div class="check-grid check-grid--4 mt-6">
+            <label class="check-item"><input type="checkbox"><span>AUSENTE</span></label>
+            <label class="check-item"><input type="checkbox"><span>CARACTERÍSTICO</span></label>
+            <label class="check-item"><input type="checkbox"><span>FÉTIDO</span></label>
+            <label class="check-item"><input type="checkbox"><span>PODRE</span></label>
+          </div>
+        </div>
+
+        <!-- Bordas -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">BORDAS</span>
+          <div class="check-grid check-grid--4 mt-6">
+            <label class="check-item"><input type="checkbox"><span>NÍTIDAS</span></label>
+            <label class="check-item"><input type="checkbox"><span>DIFUSAS</span></label>
+            <label class="check-item"><input type="checkbox"><span>DESCOLADAS</span></label>
+            <label class="check-item"><input type="checkbox"><span>ENRUGADAS</span></label>
+          </div>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>FIBRÓTICAS</span></label>
+            <label class="check-item"><input type="checkbox"><span>EPITELIZADAS</span></label>
+            <label class="check-item"><input type="checkbox"><span>HIPERQUERATÓTICAS / ISQUÊMICAS</span></label>
+          </div>
+        </div>
+
+        <!-- Pele perilesional -->
+        <div class="sub-group mt-12">
+          <span class="sub-label">PELE PERILESIONAL</span>
+          <div class="check-grid check-grid--5 mt-6">
+            <label class="check-item"><input type="checkbox"><span>ÍNTEGRA</span></label>
+            <label class="check-item"><input type="checkbox"><span>ERIMATOSA</span></label>
+            <label class="check-item"><input type="checkbox"><span>CALOR</span></label>
+            <label class="check-item"><input type="checkbox"><span>EDEMA MODERADO</span></label>
+            <label class="check-item"><input type="checkbox"><span>BOLHAS DE TENSÃO</span></label>
+          </div>
+          <div class="check-grid check-grid--3 mt-6">
+            <label class="check-item"><input type="checkbox"><span>DESCAMAÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>MACERAÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>ESCORIAÇÃO</span></label>
+            <label class="check-item"><input type="checkbox"><span>NECROSE DE TENSÃO</span></label>
+          </div>
+        </div>
+
+        <!-- Anotações -->
+        <div class="field mt-16">
+          <label class="field__label">ANOTAÇÕES</label>
+          <textarea class="field__textarea" placeholder="Observações adicionais sobre a ferida..." rows="3"></textarea>
+        </div>
+      </section>
+
+      <!-- ── SECTION: UPLOAD DE FOTOS ─────────────────────── -->
+      <section class="card card--upload" style="--delay:.44s">
+        <h2 class="card__title card__title--upload">UPLOAD/DOWNLOAD DE FOTOS DA FERIDA</h2>
+        <div class="upload-grid">
+          <label class="upload-zone">
+            <input type="file" accept="image/*" hidden />
+            <div class="upload-zone__icon upload-zone__icon--down">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+                <polyline points="7 15 9 17 11 15"/>
+              </svg>
+            </div>
+            <span class="upload-zone__label">Upload</span>
+          </label>
+          <label class="upload-zone">
+            <input type="file" accept="image/*" hidden />
+            <div class="upload-zone__icon upload-zone__icon--up">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+                <polyline points="7 13 9 11 11 13"/>
+              </svg>
+            </div>
+            <span class="upload-zone__label">Download</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- ── FORM FOOTER ──────────────────────────────────── -->
+      <div class="form-footer">
+        <div class="progress-bar"><div class="progress-bar__fill"></div></div>
+        <div class="form-footer__actions">
+          <button type="button" class="btn-voltar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+            </svg>
+            VOLTAR
+          </button>
+          <div class="pagination">
+            <span class="dot"></span>
+            <span class="dot dot--active"></span>
+          </div>
+          <button type="submit" class="btn-salvar">
+            SALVAR
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

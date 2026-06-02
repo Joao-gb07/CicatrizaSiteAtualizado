@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="pagina-inicial">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicatriza+ - Área de Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importação da fonte Montserrat -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-inicial">
+
+    <div class="dashboard-wrapper">
+        
+        <!-- BARRA LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <!-- Logo do Sistema -->
+                <div class="brand-logo">
+                    <span class="logo-icon">🩹</span>
+                    <h1 class="logo-text">Cicatriza<span class="plus-sign">+</span></h1>
+                </div>
+
+                <!-- Perfil Resumido do Usuário -->
+                <div class="user-profile-summary">
+                    <div class="profile-avatar">m</div>
+                    <div class="profile-info">
+                        <p class="user-name">Maria Silva</p>
+                        <p class="user-role">Enfermeira COREN(DF)</p>
+                    </div>
+                </div>
+
+                <!-- Menu de Navegação Principal -->
+                <nav class="sidebar-menu">
+                    <a href="#" class="menu-item active">
+                        <span class="item-icon">🎛️</span> Área de trabalho
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="item-icon">👤➕</span> Cadastrar paciente
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="item-icon">👥</span> Meus pacientes
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Menu Inferior da Sidebar -->
+            <div class="sidebar-bottom">
+                <a href="#" class="menu-item">
+                    <span class="item-icon">⚙️</span> Configurações
+                </a>
+                <a href="#" class="menu-item logout">
+                    <span class="item-icon">↪️</span> Sair da conta
+                </a>
+            </div>
+        </aside>
+
+        <!-- ÁREA PRINCIPAL DO CONTEÚDO -->
+        <main class="main-content">
+            
+            <!-- Saudação e Data -->
+            <header class="content-header">
+                <h2>Bom dia, Maria 👋</h2>
+                <p class="date-subtitle">Quinta-feira, 30 de Maio de 2026 — <span class="highlight-text">você tem 3 avaliações pendentes</span></p>
+            </header>
+
+            <!-- Linha de Métricas (Cards Superiores) -->
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <p class="metric-title">Pacientes ativos</p>
+                    <p class="metric-value">228</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-title">Avaliações este mês</p>
+                    <p class="metric-value">87</p>
+                </div>
+                <div class="metric-card alert">
+                    <p class="metric-title">Casos críticos</p>
+                    <p class="metric-value critical">2</p>
+                </div>
+            </section>
+
+            <!-- Linha de Ações Rápidas (Grandes com Ícone) -->
+            <section class="actions-grid">
+                <div class="action-card-btn">
+                    <div class="action-icon-wrapper teal-bg">
+                        <img src="img/icone_branco.png" alt="Cadastrar paciente">
+                    </div>
+                    <div class="action-text">
+                        <h3>Cadastrar paciente</h3>
+                        <p>Registre um novo paciente e inicie o acompanhamento de feridas</p>
+                    </div>
+                    <div class="action-arrow">→</div>
+                </div>
+
+                <div class="action-card-btn">
+                    <div class="action-icon-wrapper teal-bg">
+                        <img src="img/icones_cadastrados.png" alt="Pacientes registrados">
+                    </div>
+                    <div class="action-text">
+                        <h3>Pacientes registrados</h3>
+                        <p>Acesse a lista de pacientes e o histórico de avaliações</p>
+                    </div>
+                    <div class="action-arrow">→</div>
+                </div>
+            </section>
+
+            <!-- Seção: Atividade Recente -->
+            <section class="recent-activity-section">
+                <h3 class="section-subtitle">Atividade recente 🕒</h3>
+
+                <div class="activity-list">
+                    <!-- Item 1: João Carlos -->
+                    <div class="activity-item">
+                        <div class="activity-left">
+                            <span class="status-dot red-dot"></span>
+                            <div class="activity-details">
+                                <h4>João Carlos Oliveira</h4>
+                                <p>Avaliação realizada · 14/04/2025 · Calcâneo direito</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-open">Abrir →</a>
+                    </div>
+
+                    <!-- Item 2: Pedro Henrique -->
+                    <div class="activity-item">
+                        <div class="activity-left">
+                            <span class="status-dot orange-dot"></span>
+                            <div class="activity-details">
+                                <h4>Pedro Henrique Souza</h4>
+                                <p>Foto registrada · 13/04/2025 · Região sacral</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-open">Abrir →</a>
+                    </div>
+
+                    <!-- Item 3: Filipe Gabriel -->
+                    <div class="activity-item">
+                        <div class="activity-left">
+                            <span class="status-dot green-dot"></span>
+                            <div class="activity-details">
+                                <h4>Filipe Gabriel Gomes</h4>
+                                <p>Novo cadastro · 12/04/2025 · Maléolo esquerdo</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-open">Abrir →</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

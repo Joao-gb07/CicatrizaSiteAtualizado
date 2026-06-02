@@ -1,0 +1,3750 @@
+/* ============================================================
+   CICATRIZA+ - CSS UNIFICADO
+   Gerado a partir dos CSS individuais.
+   Cada bloco fica isolado pela classe da pagina no <html>.
+   ============================================================ */
+
+
+/* ============================================================
+   Landing page (landingpage.html)
+   Classe de isolamento: pagina-landing-page
+   CSS original: stylelandingpage.css
+   ============================================================ */
+html.pagina-landing-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-landing-page {
+    scroll-behavior: smooth;
+}
+
+html.pagina-landing-page body {
+    background-color: #ffffff;
+    color: #334155;
+    overflow-x: hidden;
+}
+
+/* PALETA DE CORES (Variações do Teal/Verde da Imagem) */
+html.pagina-landing-page {
+    --primary-color: #0b8a73;
+    --primary-light: #1abc9c;
+    --dark-bg: #091e24;
+    --light-bg: #f8fafc;
+    --gray-text: #64748b;
+}
+
+/* ESTILO DO HEADER */
+html.pagina-landing-page .main-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+html.pagina-landing-page .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+html.pagina-landing-page .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+html.pagina-landing-page .logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+html.pagina-landing-page .plus {
+    color: #e74c3c;
+}
+
+html.pagina-landing-page .nav-links a {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+
+html.pagina-landing-page .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+html.pagina-landing-page .btn-top {
+    text-decoration: none;
+    background-color: var(--primary-light);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* SEÇÃO HERO */
+html.pagina-landing-page .hero-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: radial-gradient(circle at top right, #f0fdfa, transparent);
+}
+
+html.pagina-landing-page .hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+html.pagina-landing-page .hero-section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+html.pagina-landing-page .hero-section .highlight {
+    color: var(--primary-color);
+}
+
+html.pagina-landing-page .hero-subtitle {
+    font-size: 16px;
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+html.pagina-landing-page .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+html.pagina-landing-page .btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+}
+
+html.pagina-landing-page .btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+html.pagina-landing-page .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+html.pagina-landing-page .stat-item strong {
+    display: block;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+html.pagina-landing-page .stat-item span {
+    font-size: 13px;
+    color: var(--gray-text);
+}
+
+/* MOCKUP DO SISTEMA */
+html.pagina-landing-page .system-mockup {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+html.pagina-landing-page .mockup-header {
+    background-color: #f1f5f9;
+    padding: 12px;
+    display: flex;
+    gap: 6px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+html.pagina-landing-page .mockup-header .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+}
+
+html.pagina-landing-page .mockup-content {
+    padding: 40px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+html.pagina-landing-page .mockup-box {
+    background-color: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--gray-text);
+    border-radius: 8px;
+}
+
+/* TÍTULOS GERAIS DE SEÇÃO */
+html.pagina-landing-page .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+html.pagina-landing-page .badge {
+    background-color: #ccfbf1;
+    color: #0d9488;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+html.pagina-landing-page .section-title h2 {
+    font-size: 32px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+/* SEÇÃO CARDS (RECURSOS) */
+html.pagina-landing-page .features-section {
+    background-color: var(--light-bg);
+    padding: 100px 20px;
+}
+
+html.pagina-landing-page .features-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+html.pagina-landing-page .feature-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    border: 1px solid #f1f5f9;
+}
+
+html.pagina-landing-page .card-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+html.pagina-landing-page .card-icon.blue { background-color: #e0f2fe; }
+html.pagina-landing-page .card-icon.green { background-color: #dcfce7; }
+html.pagina-landing-page .card-icon.orange { background-color: #ffedd5; }
+html.pagina-landing-page .card-icon.purple { background-color: #f3e8ff; }
+
+html.pagina-landing-page .feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+html.pagina-landing-page .feature-card p {
+    font-size: 14px;
+    color: var(--gray-text);
+    line-height: 1.5;
+}
+
+/* Card Destacado */
+html.pagina-landing-page .highlighted-card {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html.pagina-landing-page .highlighted-card h3 { color: #ffffff; }
+html.pagina-landing-page .highlighted-card p { color: #ccfbf1; margin-bottom: 20px; }
+html.pagina-landing-page .highlighted-card .card-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* SEÇÃO PASSO A PASSO */
+html.pagina-landing-page .steps-section {
+    padding: 100px 20px;
+}
+
+html.pagina-landing-page .steps-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+html.pagina-landing-page .step-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+html.pagina-landing-page .step-item.reverse {
+    flex-direction: row-reverse;
+}
+
+html.pagina-landing-page .step-text {
+    flex: 1;
+}
+
+html.pagina-landing-page .step-number {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--primary-light);
+    display: block;
+    margin-bottom: 10px;
+}
+
+html.pagina-landing-page .step-text h3 {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+html.pagina-landing-page .step-text p {
+    font-size: 15px;
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+html.pagina-landing-page .step-visual {
+    flex: 1;
+    background-color: #f1f5f9;
+    height: 240px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+}
+
+/* CTA BANNER GRADIENTE */
+html.pagina-landing-page .cta-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+html.pagina-landing-page .cta-banner h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+html.pagina-landing-page .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+html.pagina-landing-page .btn-cta-white {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+html.pagina-landing-page .btn-cta-transparent {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+/* SEÇÃO CONTATO */
+html.pagina-landing-page .contact-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+html.pagina-landing-page .contact-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+html.pagina-landing-page .contact-info h2 {
+    font-size: 32px;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+html.pagina-landing-page .contact-info p {
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+html.pagina-landing-page .info-links {
+    margin-top: 30px;
+}
+
+html.pagina-landing-page .info-links p {
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+html.pagina-landing-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+html.pagina-landing-page .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+html.pagina-landing-page .contact-form input, html.pagina-landing-page .contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+html.pagina-landing-page .contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+/* RODAPÉ ESCURO */
+html.pagina-landing-page .dark-footer {
+    background-color: var(--dark-bg);
+    color: #94a3b8;
+    padding: 60px 20px;
+}
+
+html.pagina-landing-page .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+}
+
+html.pagina-landing-page .logo.white .logo-text {
+    color: #ffffff;
+}
+
+html.pagina-landing-page .footer-brand p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+html.pagina-landing-page .footer-links-col h4 {
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+html.pagina-landing-page .footer-links-col a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+html.pagina-landing-page .footer-links-col a:hover {
+    color: #ffffff;
+}
+
+/* RESPONSIVIDADE COMPLETA */
+@media (max-width: 768px) {
+    html.pagina-landing-page .header-container { flex-direction: column; gap: 15px; text-align: center; }
+    html.pagina-landing-page .nav-links { margin: 10px 0; }
+    html.pagina-landing-page .hero-section h1 { font-size: 32px; }
+    html.pagina-landing-page .hero-stats { gap: 20px; flex-wrap: wrap; }
+    html.pagina-landing-page .mockup-content { grid-template-columns: 1fr; }
+    html.pagina-landing-page .step-item, html.pagina-landing-page .step-item.reverse { flex-direction: column; text-align: center; gap: 30px; }
+    html.pagina-landing-page .cta-buttons, html.pagina-landing-page .form-row { grid-template-columns: 1fr; flex-direction: column; }
+    html.pagina-landing-page .contact-grid, html.pagina-landing-page .footer-container { grid-template-columns: 1fr; gap: 40px; }
+}
+
+
+/* ============================================================
+   Login (login.html)
+   Classe de isolamento: pagina-login
+   CSS original: stylelogin.css
+   ============================================================ */
+html.pagina-login * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fundo da tela */
+html.pagina-login body {
+    background-color: #0b8a73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card central branco */
+html.pagina-login .login-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Estrutura da Logo */
+html.pagina-login .logo-header {
+    margin-bottom: 30px;
+}
+
+html.pagina-login .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 24px;
+}
+
+html.pagina-login .logo-text {
+    color: #1abc9c;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+html.pagina-login img {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+
+html.pagina-login .plus-sign {
+    color: #e74c3c;
+}
+
+html.pagina-login .subtitle {
+    color: #7f8c8d;
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Campos de entrada (Inputs e Labels) */
+html.pagina-login .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+html.pagina-login .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+html.pagina-login .input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+html.pagina-login .input-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+html.pagina-login .input-group input:focus {
+    border-color: #1abc9c;
+}
+
+/* Link de recuperação de senha */
+html.pagina-login .forgot-password {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-login .forgot-password a {
+    color: #1abc9c;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+html.pagina-login .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+html.pagina-login .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    margin-bottom: 15px;
+}
+
+html.pagina-login .btn:active {
+    transform: scale(0.98);
+}
+
+/* Botão Entrar */
+html.pagina-login .btn-primary {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(26, 188, 156, 0.3);
+}
+
+html.pagina-login .btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Botão Criar Conta */
+html.pagina-login .btn-secondary {
+    background-color: #ffffff;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    margin-bottom: 25px;
+}
+
+html.pagina-login .btn-secondary:hover {
+    background-color: #f5fbf9;
+}
+
+/* Texto informativo do rodapé */
+html.pagina-login .form-footer p {
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* ============================================================
+   Cadastro (cadastro.html)
+   Classe de isolamento: pagina-cadastro
+   CSS original: stylecadastro.css
+   ============================================================ */
+html.pagina-cadastro * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fundo da tela (Mesma cor teal/verde do login) */
+html.pagina-cadastro body {
+    background-color: #0b8a73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Card centralizado branco */
+html.pagina-cadastro .register-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 520px; /* Um pouco mais largo para acomodar duas colunas */
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho da página */
+html.pagina-cadastro .register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Emblema do logo */
+html.pagina-cadastro .user-icon-badge {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+}
+
+html.pagina-cadastro .user-icon-badge .logo-img {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+html.pagina-cadastro .register-header h2 {
+    color: #111111;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+html.pagina-cadastro .register-header .subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Configuração do Formulário */
+html.pagina-cadastro .register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout de duas colunas usando CSS Grid */
+html.pagina-cadastro .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+html.pagina-cadastro .full-width {
+    margin-bottom: 15px;
+}
+
+/* Estilização dos blocos de Input */
+html.pagina-cadastro .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+html.pagina-cadastro .input-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+html.pagina-cadastro .input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04), 0 3px 6px rgba(0, 0, 0, 0.03);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Placeholder cinza claro */
+html.pagina-cadastro .input-group input::placeholder {
+    color: #94a3b8;
+}
+
+html.pagina-cadastro .input-group input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.15);
+}
+
+/* Caixa de aviso sobre o e-mail */
+html.pagina-cadastro .info-box {
+    background-color: #f0fdfa;
+    border: 1px solid #ccfbf1;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+html.pagina-cadastro .info-box p {
+    color: #0d9488;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Botão de Envio verde escuro */
+html.pagina-cadastro .btn-submit {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(26, 188, 156, 0.25);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+html.pagina-cadastro .btn-submit:hover {
+    background-color: #16a085;
+}
+
+html.pagina-cadastro .btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Rodapé inferior (Voltar para o Login) */
+html.pagina-cadastro .register-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+html.pagina-cadastro .register-footer p {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+html.pagina-cadastro .register-footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+html.pagina-cadastro .register-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste Responsivo para Celulares */
+@media (max-width: 480px) {
+    html.pagina-cadastro .form-row {
+        grid-template-columns: 1fr; /* Transforma as duas colunas em uma linha única em telas pequenas */
+        gap: 15px;
+    }
+    html.pagina-cadastro .register-container {
+        padding: 25px 20px;
+    }
+}
+
+
+/* ============================================================
+   Pagina inicial (paginainicial.html)
+   Classe de isolamento: pagina-inicial
+   CSS original: stylepaginainicial.css
+   ============================================================ */
+html.pagina-inicial * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-inicial body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+html.pagina-inicial .dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------------------------- */
+/* SIDEBAR (BARRA LATERAL)                                       */
+/* ------------------------------------------------------------- */
+html.pagina-inicial .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+}
+
+html.pagina-inicial .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 25px 10px;
+}
+
+html.pagina-inicial .logo-text {
+    color: #0b8a73;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html.pagina-inicial .plus-sign {
+    color: #e74c3c;
+}
+
+html.pagina-inicial .user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-inicial .profile-avatar {
+    background-color: #1abc9c;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+html.pagina-inicial .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-inicial .user-role {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+html.pagina-inicial .sidebar-menu, html.pagina-inicial .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html.pagina-inicial .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+html.pagina-inicial .menu-item:hover {
+    background-color: #f1f5f9;
+}
+
+html.pagina-inicial .menu-item.active {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------------------------------------------- */
+/* CONTEÚDO PRINCIPAL (MAIN CONTENT)                             */
+/* ------------------------------------------------------------- */
+html.pagina-inicial .main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 40px 50px;
+}
+
+html.pagina-inicial .content-header {
+    margin-bottom: 35px;
+}
+
+html.pagina-inicial .content-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-inicial .date-subtitle {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+html.pagina-inicial .highlight-text {
+    color: #94a3b8;
+}
+
+/* CARDS DE MÉTRICAS */
+html.pagina-inicial .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+html.pagina-inicial .metric-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+html.pagina-inicial .metric-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+html.pagina-inicial .metric-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+html.pagina-inicial .metric-value.critical {
+    color: #ef4444;
+}
+
+/* BOTÕES DE AÇÕES RÁPIDAS */
+html.pagina-inicial .actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+html.pagina-inicial .action-card-btn {
+    background-color: #ffffff;
+    border: 2px solid #1abc9c;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+html.pagina-inicial .action-card-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(26, 188, 156, 0.1);
+}
+
+html.pagina-inicial .action-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1abc9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+html.pagina-inicial .action-icon-wrapper img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+html.pagina-inicial .action-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+html.pagina-inicial .action-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+html.pagina-inicial .action-text p {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+html.pagina-inicial .action-arrow {
+    font-size: 18px;
+    color: #475569;
+    font-weight: bold;
+}
+
+/* SEÇÃO DE ATIVIDADES RECENTES */
+html.pagina-inicial .section-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+html.pagina-inicial .activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+html.pagina-inicial .activity-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+html.pagina-inicial .activity-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+html.pagina-inicial .status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+html.pagina-inicial .red-dot { background-color: #ef4444; }
+html.pagina-inicial .orange-dot { background-color: #f59e0b; }
+html.pagina-inicial .green-dot { background-color: #10b981; }
+
+html.pagina-inicial .activity-details h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+html.pagina-inicial .activity-details p {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+html.pagina-inicial .btn-open {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b8a73;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+html.pagina-inicial .btn-open:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------- */
+/* ADAPTAÇÃO PARA RESPONSIVIDADE                                 */
+/* ------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    html.pagina-inicial .metrics-grid, html.pagina-inicial .actions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    html.pagina-inicial .sidebar {
+        width: 70px;
+        padding: 20px 8px;
+    }
+    html.pagina-inicial .brand-logo h1, html.pagina-inicial .profile-info, html.pagina-inicial .menu-item {
+        font-size: 0;
+        display: none;
+    }
+    html.pagina-inicial .menu-item {
+        justify-content: center;
+    }
+    html.pagina-inicial .main-content {
+        margin-left: 70px;
+        padding: 20px;
+    }
+}
+
+
+/* ============================================================
+   Painel paciente (painelpaciente.html)
+   Classe de isolamento: pagina-painel-paciente
+   CSS original: stylepainelpaciente.css
+   ============================================================ */
+html.pagina-painel-paciente * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-painel-paciente body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+html.pagina-painel-paciente .dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------------------------- */
+/* SIDEBAR (BARRA LATERAL)                                       */
+/* ------------------------------------------------------------- */
+html.pagina-painel-paciente .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+}
+
+html.pagina-painel-paciente .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 25px 10px;
+}
+
+html.pagina-painel-paciente .logo-text {
+    color: #0b8a73;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html.pagina-painel-paciente .plus-sign {
+    color: #e74c3c;
+}
+
+html.pagina-painel-paciente .user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-painel-paciente .profile-avatar {
+    background-color: #1abc9c;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+html.pagina-painel-paciente .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-painel-paciente .user-role {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+html.pagina-painel-paciente .sidebar-menu, html.pagina-painel-paciente .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html.pagina-painel-paciente .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+html.pagina-painel-paciente .menu-item:hover {
+    background-color: #f1f5f9;
+}
+
+html.pagina-painel-paciente .menu-item.active {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------------------------------------------- */
+/* CONTEÚDO PRINCIPAL (MAIN CONTENT)                             */
+/* ------------------------------------------------------------- */
+html.pagina-painel-paciente .main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* SEÇÃO DA BARRA DE PESQUISA */
+html.pagina-painel-paciente .search-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+html.pagina-painel-paciente .search-bar-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+html.pagina-painel-paciente .search-bar-wrapper input {
+    width: 100%;
+    padding: 16px 50px 16px 24px;
+    border: 1px solid #cbd5e1;
+    border-radius: 50px; /* Bordas arredondadas ovais idênticas ao mockup */
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+html.pagina-painel-paciente .search-icon {
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+/* CARD DE FILTROS */
+html.pagina-painel-paciente .filters-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+html.pagina-painel-paciente .filters-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+html.pagina-painel-paciente .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Customização Estilizada das Caixas de Filtro */
+html.pagina-painel-paciente .custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+html.pagina-painel-paciente .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+html.pagina-painel-paciente .checkbox-box {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #475569;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: #475569;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+html.pagina-painel-paciente .checkbox-box.marked {
+    background-color: #f1f5f9;
+}
+
+html.pagina-painel-paciente .checkbox-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    letter-spacing: 0.3px;
+}
+
+/* LISTAGEM DE PACIENTES */
+html.pagina-painel-paciente .patients-list-section {
+    width: 100%;
+}
+
+html.pagina-painel-paciente .patient-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+html.pagina-painel-paciente .patient-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+html.pagina-painel-paciente .patient-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+html.pagina-painel-paciente .status-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+html.pagina-painel-paciente .orange-dot { background-color: #f59e0b; }
+html.pagina-painel-paciente .green-dot { background-color: #10b981; }
+html.pagina-painel-paciente .red-dot { background-color: #ef4444; }
+
+html.pagina-painel-paciente .patient-details h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+html.pagina-painel-paciente .patient-details p {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+html.pagina-painel-paciente .btn-open {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b8a73;
+    text-decoration: none;
+}
+
+html.pagina-painel-paciente .btn-open:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------- */
+/* RESPONSIVIDADE                                                */
+/* ------------------------------------------------------------- */
+@media (max-width: 900px) {
+    html.pagina-painel-paciente .checkbox-group {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    html.pagina-painel-paciente .sidebar {
+        width: 70px;
+        padding: 20px 8px;
+    }
+    html.pagina-painel-paciente .brand-logo h1, html.pagina-painel-paciente .profile-info, html.pagina-painel-paciente .menu-item {
+        display: none;
+    }
+    html.pagina-painel-paciente .menu-item {
+        justify-content: center;
+    }
+    html.pagina-painel-paciente .main-content {
+        margin-left: 70px;
+        padding: 20px;
+    }
+    html.pagina-painel-paciente .checkbox-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    html.pagina-painel-paciente .patient-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    html.pagina-painel-paciente .btn-open {
+        align-self: flex-end;
+    }
+}
+
+
+/* ============================================================
+   Cadastro paciente (cadastropaciente.html)
+   Classe de isolamento: pagina-cadastro-paciente
+   CSS original: stylecadastropaciente.css
+   ============================================================ */
+html.pagina-cadastro-paciente * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-cadastro-paciente body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+html.pagina-cadastro-paciente .dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------------------------- */
+/* SIDEBAR (BARRA LATERAL)                                       */
+/* ------------------------------------------------------------- */
+html.pagina-cadastro-paciente .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+}
+
+html.pagina-cadastro-paciente .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 25px 10px;
+}
+
+html.pagina-cadastro-paciente .logo-text {
+    color: #0b8a73;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html.pagina-cadastro-paciente .plus-sign {
+    color: #e74c3c;
+}
+
+html.pagina-cadastro-paciente .user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-cadastro-paciente .profile-avatar {
+    background-color: #1abc9c;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+html.pagina-cadastro-paciente .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-cadastro-paciente .user-role {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+html.pagina-cadastro-paciente .sidebar-menu, html.pagina-cadastro-paciente .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html.pagina-cadastro-paciente .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+html.pagina-cadastro-paciente .menu-item:hover {
+    background-color: #f1f5f9;
+}
+
+html.pagina-cadastro-paciente .menu-item.active {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------------------------------------------- */
+/* CONTEÚDO PRINCIPAL (MAIN CONTENT)                             */
+/* ------------------------------------------------------------- */
+html.pagina-cadastro-paciente .main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 40px 50px;
+}
+
+/* Card de Status Superior */
+html.pagina-cadastro-paciente .status-top-card {
+    background-color: #ffffff;
+    border: 1px solid #1abc9c;
+    border-radius: 16px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+html.pagina-cadastro-paciente .status-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+html.pagina-cadastro-paciente .icon-bg {
+    width: 48px;
+    height: 48px;
+    background-color: #1abc9c;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+html.pagina-cadastro-paciente .status-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+html.pagina-cadastro-paciente .status-text p {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+html.pagina-cadastro-paciente .status-arrow {
+    font-size: 18px;
+    color: #475569;
+}
+
+/* ESTRUTURA DO FORMULÁRIO */
+html.pagina-cadastro-paciente .patient-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+html.pagina-cadastro-paciente .form-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+}
+
+html.pagina-cadastro-paciente .form-left-col, html.pagina-cadastro-paciente .form-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sub-linhas flexíveis */
+html.pagina-cadastro-paciente .form-subrow {
+    display: grid;
+    gap: 15px;
+}
+
+html.pagina-cadastro-paciente .four-cols { grid-template-columns: repeat(4, 1fr); }
+html.pagina-cadastro-paciente .three-cols { grid-template-columns: 1.2fr 1fr 1fr; }
+html.pagina-cadastro-paciente .two-cols { grid-template-columns: 1fr 1fr; }
+html.pagina-cadastro-paciente .two-cols-large { grid-template-columns: 1fr 1.8fr; }
+
+html.pagina-cadastro-paciente .form-bottom-row {
+    display: grid;
+    gap: 20px;
+}
+
+/* CONFIGURAÇÃO DOS INPUTS */
+html.pagina-cadastro-paciente .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+html.pagina-cadastro-paciente .input-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.3px;
+}
+
+html.pagina-cadastro-paciente .input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #334155;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.02);
+}
+
+html.pagina-cadastro-paciente .input-group input::placeholder {
+    color: #94a3b8;
+}
+
+html.pagina-cadastro-paciente .input-group input:focus {
+    border-color: #1abc9c;
+}
+
+/* RODAPÉ E PAGINAÇÃO */
+html.pagina-cadastro-paciente .form-actions-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+html.pagina-cadastro-paciente .pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 160px;
+}
+
+html.pagina-cadastro-paciente .progress-bar-wrapper {
+    width: 100%;
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+html.pagina-cadastro-paciente .progress-fill {
+    width: 50%; /* Define o preenchimento da primeira metade */
+    height: 100%;
+    background-color: #0d9488;
+}
+
+html.pagina-cadastro-paciente .dots-indicator {
+    display: flex;
+    gap: 8px;
+}
+
+html.pagina-cadastro-paciente .dots-indicator .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+}
+
+html.pagina-cadastro-paciente .dots-indicator .dot.active {
+    background-color: #0d9488;
+}
+
+/* BOTÃO CONTINUAR */
+html.pagina-cadastro-paciente .btn-continue {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(26, 188, 156, 0.2);
+}
+
+html.pagina-cadastro-paciente .btn-continue:hover {
+    background-color: #16a085;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    html.pagina-cadastro-paciente .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    html.pagina-cadastro-paciente .four-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+    html.pagina-cadastro-paciente .form-bottom-row.three-cols, html.pagina-cadastro-paciente .form-bottom-row.two-cols-large {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    html.pagina-cadastro-paciente .sidebar {
+        width: 70px;
+        padding: 20px 8px;
+    }
+    html.pagina-cadastro-paciente .brand-logo h1, html.pagina-cadastro-paciente .profile-info, html.pagina-cadastro-paciente .menu-item {
+        display: none;
+    }
+    html.pagina-cadastro-paciente .menu-item {
+        justify-content: center;
+    }
+    html.pagina-cadastro-paciente .main-content {
+        margin-left: 70px;
+        padding: 20px;
+    }
+    html.pagina-cadastro-paciente .four-cols, html.pagina-cadastro-paciente .two-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ============================================================
+   Configuracoes (configuracoes.html)
+   Classe de isolamento: pagina-configuracoes
+   CSS original: styleconfiguracoes.css
+   ============================================================ */
+html.pagina-configuracoes * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-configuracoes body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Container flexível pai que junta a barra lateral e a tela principal */
+html.pagina-configuracoes .dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÃO DA SIDEBAR (BARRA LATERAL)                         */
+/* ------------------------------------------------------------- */
+html.pagina-configuracoes .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+}
+
+/* Bloco superior da logo */
+html.pagina-configuracoes .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 25px 10px;
+}
+
+html.pagina-configuracoes .logo-text {
+    color: #0b8a73;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html.pagina-configuracoes .plus-sign {
+    color: #e74c3c;
+}
+
+/* Widget do perfil do usuário logado */
+html.pagina-configuracoes .user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-configuracoes .profile-avatar {
+    background-color: #0b8a73;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+html.pagina-configuracoes .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-configuracoes .user-role {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* Links do Menu Lateral */
+html.pagina-configuracoes .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html.pagina-configuracoes .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+html.pagina-configuracoes .menu-item:hover {
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+}
+
+/* Item Ativo (Configurações) */
+html.pagina-configuracoes .menu-item.active {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+html.pagina-configuracoes .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL (MAIN CONTENT)              */
+/* ------------------------------------------------------------- */
+html.pagina-configuracoes .main-content {
+    margin-left: 260px; /* Alinha o conteúdo ao lado da barra fixa */
+    flex: 1;
+    padding: 40px;
+}
+
+/* Cabeçalho superior */
+html.pagina-configuracoes .content-header {
+    margin-bottom: 30px;
+}
+
+html.pagina-configuracoes .content-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: 0.5px;
+}
+
+html.pagina-configuracoes .content-header p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+/* Seção cinza de fundo para o card */
+html.pagina-configuracoes .form-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* O card de formulário branco interno */
+html.pagina-configuracoes .register-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Componentes do Formulário Interno */
+html.pagina-configuracoes .register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+html.pagina-configuracoes .user-icon-badge {
+    background-color: #0b8a73;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+html.pagina-configuracoes .register-header h2 {
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+html.pagina-configuracoes .register-header .subtitle {
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+html.pagina-configuracoes .register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+html.pagina-configuracoes .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+html.pagina-configuracoes .full-width {
+    margin-bottom: 15px;
+}
+
+html.pagina-configuracoes .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+html.pagina-configuracoes .input-group label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+html.pagina-configuracoes .input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #94a3b8; /* Borda cinza escura similar ao mockup */
+    border-radius: 10px;
+    font-size: 13px;
+    outline: none;
+    background-color: #ffffff;
+    color: #334155;
+}
+
+html.pagina-configuracoes .input-group input::placeholder {
+    color: #94a3b8;
+}
+
+/* Botão Alterar centralizado de cor Teal */
+html.pagina-configuracoes .btn-submit {
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+html.pagina-configuracoes .btn-submit:hover {
+    background-color: #0f766e;
+}
+
+/* ------------------------------------------------------------- */
+/* RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS                        */
+/* ------------------------------------------------------------- */
+@media (max-width: 900px) {
+    html.pagina-configuracoes .sidebar {
+        width: 70px;
+        padding: 20px 10px;
+    }
+    html.pagina-configuracoes .brand-logo h1, html.pagina-configuracoes .profile-info, html.pagina-configuracoes .menu-item {
+        font-size: 0; /* Oculta textos mantendo apenas ícones visíveis */
+    }
+    html.pagina-configuracoes .menu-item {
+        justify-content: center;
+        padding: 12px 0;
+    }
+    html.pagina-configuracoes .main-content {
+        margin-left: 70px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    html.pagina-configuracoes .form-row {
+        grid-template-columns: 1fr;
+    }
+    html.pagina-configuracoes .register-container {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    
+    /* Faz o menu ficar em linhas ou centralizado */
+    html.pagina-configuracoes .menu-navegacao {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Transforma as seções de colunas para linhas verticais */
+    html.pagina-configuracoes .secao-flex {
+        flex-direction: column;
+        text-align: center; /* Centraliza os textos no celular */
+        gap: 30px;
+    }
+
+    /* Espaçamento menor entre as seções no celular */
+    html.pagina-configuracoes .esp-secoes {
+        margin: 50px 0;
+    }
+
+    /* Garante que o texto ocupe toda a largura disponível */
+    html.pagina-configuracoes .conteudo-texto {
+        max-width: 100%;
+    }
+
+    /* Reduz o tamanho dos títulos para telas menores */
+    html.pagina-configuracoes .conteudo-texto h1 {
+        font-size: 32px;
+    }
+
+    html.pagina-configuracoes .conteudo-texto h2 {
+        font-size: 26px;
+    }
+
+    /* Ajusta o tamanho da imagem circular no celular */
+    html.pagina-configuracoes .imagem-circular {
+        width: 280px;
+        height: 280px;
+    }
+
+    /* Ajusta o tamanho das imagens retangulares no celular */
+    html.pagina-configuracoes .imagem-retangular {
+        width: 100%;
+        max-width: 440px;
+        height: 220px;
+    }
+
+    /* TRUQUE DE INVERSÃO DE ORDEM: 
+       Na segunda seção, faz a imagem aparecer ANTES do texto no celular */
+    html.pagina-configuracoes .secao-flex:nth-of-type(1) {
+        flex-direction: column-reverse;
+    }
+}
+
+
+/* ============================================================
+   Relatorio paciente (relatoriopaciente.html)
+   Classe de isolamento: pagina-relatorio-paciente
+   CSS original: stylerelatoriopaciente.css
+   ============================================================ */
+html.pagina-relatorio-paciente * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html.pagina-relatorio-paciente body {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+html.pagina-relatorio-paciente .dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ------------------------------------------------------------- */
+/* SIDEBAR (BARRA LATERAL)                                       */
+/* ------------------------------------------------------------- */
+html.pagina-relatorio-paciente .sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+}
+
+html.pagina-relatorio-paciente .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 25px 10px;
+}
+
+html.pagina-relatorio-paciente .logo-text {
+    color: #0b8a73;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html.pagina-relatorio-paciente .plus-sign {
+    color: #e74c3c;
+}
+
+html.pagina-relatorio-paciente .user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+
+html.pagina-relatorio-paciente .profile-avatar {
+    background-color: #1abc9c;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+html.pagina-relatorio-paciente .user-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+html.pagina-relatorio-paciente .user-role {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+html.pagina-relatorio-paciente .sidebar-menu, html.pagina-relatorio-paciente .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+html.pagina-relatorio-paciente .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+html.pagina-relatorio-paciente .menu-item.active {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------------------------------------------- */
+/* CONTEÚDO PRINCIPAL                                            */
+/* ------------------------------------------------------------- */
+html.pagina-relatorio-paciente .main-content {
+    margin-left: 260px;
+    flex: 1;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+html.pagina-relatorio-paciente .page-title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+html.pagina-relatorio-paciente .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* CARD DO FORMULÁRIO */
+html.pagina-relatorio-paciente .form-section-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+html.pagina-relatorio-paciente .evolution-report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* COMPONENTES DE CAMPO (INPUT) */
+html.pagina-relatorio-paciente .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+html.pagina-relatorio-paciente .input-group label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #475569;
+    letter-spacing: 0.3px;
+}
+
+html.pagina-relatorio-paciente .input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #94a3b8; /* Borda cinza escura idêntica ao padrão das telas anteriores */
+    border-radius: 10px;
+    font-size: 13px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+html.pagina-relatorio-paciente .input-group input:focus {
+    border-color: #1abc9c;
+}
+
+/* LISTA DE HISTÓRICO */
+html.pagina-relatorio-paciente .history-section {
+    display: flex;
+    flex-direction: column;
+}
+
+html.pagina-relatorio-paciente .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+html.pagina-relatorio-paciente .history-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+html.pagina-relatorio-paciente .history-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+html.pagina-relatorio-paciente .status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+html.pagina-relatorio-paciente .red-dot { background-color: #ef4444; }
+html.pagina-relatorio-paciente .orange-dot { background-color: #f59e0b; }
+html.pagina-relatorio-paciente .green-dot { background-color: #10b981; }
+
+html.pagina-relatorio-paciente .history-details h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+html.pagina-relatorio-paciente .history-details p {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* BOTÃO SALVAR (CENTRALIZADO INFERIOR) */
+html.pagina-relatorio-paciente .action-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding-bottom: 40px;
+}
+
+html.pagina-relatorio-paciente .btn-save-report {
+    background-color: #0b8a73; /* Cor verde/teal escura do botão de ação final */
+    color: #ffffff;
+    border: none;
+    padding: 16px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px; /* Formato oval/arredondado completo */
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(11, 138, 115, 0.2);
+    transition: background-color 0.2s;
+}
+
+html.pagina-relatorio-paciente .btn-save-report:hover {
+    background-color: #086958;
+}
+
+/* ------------------------------------------------------------- */
+/* RESPONSIVIDADE                                                */
+/* ------------------------------------------------------------- */
+@media (max-width: 768px) {
+    html.pagina-relatorio-paciente .sidebar {
+        width: 70px;
+        padding: 20px 8px;
+    }
+    html.pagina-relatorio-paciente .brand-logo h1, html.pagina-relatorio-paciente .profile-info, html.pagina-relatorio-paciente .menu-item {
+        display: none;
+    }
+    html.pagina-relatorio-paciente .main-content {
+        margin-left: 70px;
+        padding: 20px;
+    }
+}
+
+
+/* ============================================================
+   Formulario avaliacao (formularioavaliacao1.html)
+   Classe de isolamento: pagina-formulario-avaliacao
+   CSS original: styleformularioavaliacao1.css
+   ============================================================ */
+/* ============================================================
+   CICATRIZA+ — FORMULÁRIO DE AVALIAÇÃO DE FERIDAS
+   Estilo: Clínico refinado, clean e profissional
+   Fonte: DM Sans + DM Serif Display
+   ============================================================ */
+
+/* ── RESET & BASE ─────────────────────────────────────────── */
+html.pagina-formulario-avaliacao *, html.pagina-formulario-avaliacao *::before, html.pagina-formulario-avaliacao *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html.pagina-formulario-avaliacao {
+  /* Palette */
+  --teal-900: #0d4f4a;
+  --teal-700: #157b72;
+  --teal-500: #1aa898;
+  --teal-300: #5dcec4;
+  --teal-100: #d4f3f0;
+  --teal-50:  #edfaf9;
+
+  --neutral-900: #111827;
+  --neutral-700: #374151;
+  --neutral-500: #6b7280;
+  --neutral-300: #d1d5db;
+  --neutral-200: #e5e7eb;
+  --neutral-100: #f3f4f6;
+  --neutral-50:  #f9fafb;
+  --white:        #ffffff;
+
+  /* Sidebar */
+  --sidebar-w: 220px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadow */
+  --shadow-card: 0 1px 4px rgba(0,0,0,.06), 0 4px 20px rgba(0,0,0,.04);
+  --shadow-btn:  0 4px 14px rgba(26,168,152,.38);
+}
+
+html.pagina-formulario-avaliacao {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+html.pagina-formulario-avaliacao body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--neutral-900);
+  background: var(--neutral-100);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── SIDEBAR ──────────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: var(--white);
+  border-right: 1px solid var(--neutral-200);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  gap: 32px;
+}
+
+/* Logo */
+html.pagina-formulario-avaliacao .sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+html.pagina-formulario-avaliacao .logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--teal-500);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+html.pagina-formulario-avaliacao .logo-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--neutral-900);
+  letter-spacing: -0.02em;
+}
+
+html.pagina-formulario-avaliacao .logo-plus {
+  color: var(--teal-500);
+}
+
+/* User card */
+html.pagina-formulario-avaliacao .sidebar__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--teal-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--teal-100);
+}
+
+html.pagina-formulario-avaliacao .user-avatar {
+  width: 34px;
+  height: 34px;
+  background: var(--teal-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+html.pagina-formulario-avaliacao .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+html.pagina-formulario-avaliacao .user-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html.pagina-formulario-avaliacao .user-role {
+  font-size: 0.72rem;
+  color: var(--teal-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Nav */
+html.pagina-formulario-avaliacao .sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+html.pagina-formulario-avaliacao .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--neutral-500);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+html.pagina-formulario-avaliacao .nav-item svg {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+html.pagina-formulario-avaliacao .nav-item:hover {
+  background: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+html.pagina-formulario-avaliacao .nav-item.active {
+  background: var(--teal-50);
+  color: var(--teal-700);
+}
+
+html.pagina-formulario-avaliacao .nav-item.active svg {
+  opacity: 1;
+  stroke: var(--teal-500);
+}
+
+/* ── MAIN CONTENT ─────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  padding: 36px 40px 60px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* ── PAGE HEADER ──────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+html.pagina-formulario-avaliacao .page-header__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--teal-500);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+html.pagina-formulario-avaliacao .page-header__text {
+  flex: 1;
+}
+
+html.pagina-formulario-avaliacao .page-header__text h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--neutral-900);
+  letter-spacing: -0.01em;
+}
+
+html.pagina-formulario-avaliacao .page-header__text p {
+  font-size: 0.78rem;
+  color: var(--neutral-500);
+  margin-top: 3px;
+}
+
+html.pagina-formulario-avaliacao .page-header__arrow {
+  color: var(--neutral-400);
+}
+
+/* ── FORM SECTIONS ────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+html.pagina-formulario-avaliacao .form-section {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px 28px 32px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--neutral-200);
+  animation: fadeUp-formulario-avaliacao 0.35s ease both;
+}
+
+html.pagina-formulario-avaliacao .form-section:nth-child(1) { animation-delay: 0.04s; }
+html.pagina-formulario-avaliacao .form-section:nth-child(2) { animation-delay: 0.09s; }
+html.pagina-formulario-avaliacao .form-section:nth-child(3) { animation-delay: 0.14s; }
+html.pagina-formulario-avaliacao .form-section:nth-child(4) { animation-delay: 0.19s; }
+html.pagina-formulario-avaliacao .form-section:nth-child(5) { animation-delay: 0.24s; }
+html.pagina-formulario-avaliacao .form-section:nth-child(6) { animation-delay: 0.29s; }
+
+@keyframes fadeUp-formulario-avaliacao {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+html.pagina-formulario-avaliacao .section-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--teal-700);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--neutral-200);
+  position: relative;
+}
+
+html.pagina-formulario-avaliacao .section-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--teal-500);
+  border-radius: 2px;
+  margin: 10px auto 0;
+}
+
+/* ── FORM GRIDS ───────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px 16px;
+  align-items: start;
+}
+
+/* For "wide + small" rows (name+age, address+birth) */
+html.pagina-formulario-avaliacao .form-grid .field--wide {
+  grid-column: span 2;
+}
+html.pagina-formulario-avaliacao .form-grid .field--small {
+  grid-column: span 1;
+}
+
+html.pagina-formulario-avaliacao .form-grid--single {
+  grid-template-columns: 1fr;
+}
+
+html.pagina-formulario-avaliacao .form-grid--four {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+html.pagina-formulario-avaliacao .form-grid--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ── FIELDS ───────────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+html.pagina-formulario-avaliacao .field__label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--neutral-500);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+html.pagina-formulario-avaliacao .field__input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--neutral-900);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  -webkit-appearance: none;
+}
+
+html.pagina-formulario-avaliacao .field__input::placeholder {
+  color: var(--neutral-300);
+}
+
+html.pagina-formulario-avaliacao .field__input:focus {
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px rgba(26,168,152,0.12);
+}
+
+html.pagina-formulario-avaliacao .field__input:hover:not(:focus) {
+  border-color: var(--neutral-300);
+}
+
+/* ── FORM FOOTER ──────────────────────────────────────────── */
+html.pagina-formulario-avaliacao .form-footer {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 20px 28px 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--neutral-200);
+}
+
+/* Progress bar */
+html.pagina-formulario-avaliacao .progress-bar {
+  height: 4px;
+  background: var(--neutral-200);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+html.pagina-formulario-avaliacao .progress-bar__fill {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, var(--teal-300), var(--teal-500));
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+/* Actions row */
+html.pagina-formulario-avaliacao .form-footer__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Pagination dots */
+html.pagina-formulario-avaliacao .pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+html.pagina-formulario-avaliacao .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neutral-300);
+  transition: background 0.2s, transform 0.2s;
+}
+
+html.pagina-formulario-avaliacao .dot--active {
+  background: var(--teal-500);
+  transform: scale(1.25);
+}
+
+/* Continue button */
+html.pagina-formulario-avaliacao .btn-continuar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  background: var(--teal-500);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: background 0.18s, box-shadow 0.18s, transform 0.12s;
+}
+
+html.pagina-formulario-avaliacao .btn-continuar:hover {
+  background: var(--teal-700);
+  box-shadow: 0 6px 20px rgba(26,168,152,.45);
+}
+
+html.pagina-formulario-avaliacao .btn-continuar:active {
+  transform: scale(0.97);
+}
+
+html.pagina-formulario-avaliacao .btn-continuar svg {
+  transition: transform 0.15s;
+}
+
+html.pagina-formulario-avaliacao .btn-continuar:hover svg {
+  transform: translateX(3px);
+}
+
+/* ── SCROLLBAR ────────────────────────────────────────────── */
+html.pagina-formulario-avaliacao ::-webkit-scrollbar {
+  width: 6px;
+}
+html.pagina-formulario-avaliacao ::-webkit-scrollbar-track {
+  background: transparent;
+}
+html.pagina-formulario-avaliacao ::-webkit-scrollbar-thumb {
+  background: var(--neutral-300);
+  border-radius: 99px;
+}
+html.pagina-formulario-avaliacao ::-webkit-scrollbar-thumb:hover {
+  background: var(--teal-300);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 960px) {
+  html.pagina-formulario-avaliacao .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  html.pagina-formulario-avaliacao .form-grid .field--wide {
+    grid-column: span 2;
+  }
+  html.pagina-formulario-avaliacao .form-grid--four {
+    grid-template-columns: 1fr 1fr;
+  }
+  html.pagina-formulario-avaliacao .form-grid--three {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  html.pagina-formulario-avaliacao {
+    --sidebar-w: 0px;
+  }
+  html.pagina-formulario-avaliacao .sidebar {
+    display: none;
+  }
+  html.pagina-formulario-avaliacao .main {
+    margin-left: 0;
+    padding: 20px 16px 60px;
+  }
+  html.pagina-formulario-avaliacao .form-grid,
+  html.pagina-formulario-avaliacao .form-grid--four,
+  html.pagina-formulario-avaliacao .form-grid--three {
+    grid-template-columns: 1fr;
+  }
+  html.pagina-formulario-avaliacao .form-grid .field--wide,
+  html.pagina-formulario-avaliacao .form-grid .field--small {
+    grid-column: span 1;
+  }
+}
+
+
+/* ============================================================
+   Formulario paciente (paciente.html)
+   Classe de isolamento: pagina-paciente
+   CSS original: paciente.css
+   ============================================================ */
+/* ============================================================
+   CICATRIZA+ — FORMULÁRIO DO PACIENTE
+   Estilo: Clínico preciso, clean com acentos teal
+   Fonte: DM Sans + DM Serif Display
+   ============================================================ */
+
+/* ── RESET & BASE ─────────────────────────────────────────── */
+html.pagina-paciente *, html.pagina-paciente *::before, html.pagina-paciente *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html.pagina-paciente {
+  --teal-900: #0d4f4a;
+  --teal-700: #157b72;
+  --teal-500: #1aa898;
+  --teal-400: #2bbdac;
+  --teal-300: #5dcec4;
+  --teal-100: #d4f3f0;
+  --teal-50:  #edfaf9;
+
+  --neutral-900: #111827;
+  --neutral-800: #1f2937;
+  --neutral-700: #374151;
+  --neutral-600: #4b5563;
+  --neutral-500: #6b7280;
+  --neutral-400: #9ca3af;
+  --neutral-300: #d1d5db;
+  --neutral-200: #e5e7eb;
+  --neutral-100: #f3f4f6;
+  --neutral-50:  #f9fafb;
+  --white:       #ffffff;
+
+  --sidebar-w: 224px;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,.05), 0 4px 18px rgba(0,0,0,.04);
+  --shadow-btn:  0 4px 14px rgba(26,168,152,.35);
+}
+
+html.pagina-paciente {
+  font-size: 13.5px;
+  scroll-behavior: smooth;
+}
+
+html.pagina-paciente body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--neutral-900);
+  background: var(--neutral-100);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── SIDEBAR ──────────────────────────────────────────────── */
+html.pagina-paciente .sidebar {
+  width: var(--sidebar-w);
+  min-height: 100vh;
+  background: var(--white);
+  border-right: 1px solid var(--neutral-200);
+  display: flex;
+  flex-direction: column;
+  padding: 26px 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  gap: 28px;
+}
+
+html.pagina-paciente .sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+html.pagina-paciente .logo-icon {
+  width: 34px;
+  height: 34px;
+  background: var(--teal-500);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+html.pagina-paciente .logo-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  color: var(--neutral-900);
+  letter-spacing: -.02em;
+}
+
+html.pagina-paciente .logo-plus { color: var(--teal-500); }
+
+html.pagina-paciente .sidebar__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 13px;
+  background: var(--teal-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--teal-100);
+}
+
+html.pagina-paciente .user-avatar {
+  width: 32px;
+  height: 32px;
+  background: var(--teal-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 600;
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
+html.pagina-paciente .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+html.pagina-paciente .user-name {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html.pagina-paciente .user-role {
+  font-size: .7rem;
+  color: var(--teal-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html.pagina-paciente .sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+html.pagina-paciente .nav-divider {
+  height: 1px;
+  background: var(--neutral-200);
+  margin: 6px 0;
+}
+
+html.pagina-paciente .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 11px;
+  border-radius: var(--radius-sm);
+  color: var(--neutral-500);
+  text-decoration: none;
+  font-size: .79rem;
+  font-weight: 500;
+  transition: background .15s, color .15s;
+  cursor: pointer;
+}
+
+html.pagina-paciente .nav-item svg { flex-shrink: 0; opacity: .7; }
+
+html.pagina-paciente .nav-item:hover {
+  background: var(--neutral-100);
+  color: var(--neutral-800);
+}
+
+html.pagina-paciente .nav-item.active {
+  background: var(--teal-50);
+  color: var(--teal-700);
+}
+
+html.pagina-paciente .nav-item.active svg {
+  opacity: 1;
+  stroke: var(--teal-500);
+}
+
+/* ── MAIN ─────────────────────────────────────────────────── */
+html.pagina-paciente .main {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  padding: 34px 38px 64px;
+  max-width: 960px;
+}
+
+/* ── PAGE HEADER ──────────────────────────────────────────── */
+html.pagina-paciente .page-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+html.pagina-paciente .page-header__icon {
+  width: 46px;
+  height: 46px;
+  background: var(--teal-500);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+html.pagina-paciente .page-header__text h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--neutral-900);
+  letter-spacing: -.01em;
+}
+
+html.pagina-paciente .page-header__text p {
+  font-size: .75rem;
+  color: var(--neutral-500);
+  margin-top: 3px;
+}
+
+/* ── FORM ─────────────────────────────────────────────────── */
+html.pagina-paciente .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── CARDS ────────────────────────────────────────────────── */
+html.pagina-paciente .card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px 26px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--neutral-200);
+  animation: fadeUp-paciente .32s ease both;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeUp-paciente {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+html.pagina-paciente .card__title {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--teal-700);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--neutral-200);
+  position: relative;
+}
+
+html.pagina-paciente .card__title::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--teal-500);
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* ── CHECKBOX GRIDS ───────────────────────────────────────── */
+html.pagina-paciente .check-grid {
+  display: grid;
+  gap: 8px 10px;
+}
+
+html.pagina-paciente .check-grid--2 { grid-template-columns: repeat(2, 1fr); }
+html.pagina-paciente .check-grid--3 { grid-template-columns: repeat(3, 1fr); }
+html.pagina-paciente .check-grid--4 { grid-template-columns: repeat(4, 1fr); }
+html.pagina-paciente .check-grid--5 { grid-template-columns: repeat(5, 1fr); }
+html.pagina-paciente .check-grid--6 { grid-template-columns: repeat(6, 1fr); }
+
+html.pagina-paciente .check-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  user-select: none;
+}
+
+html.pagina-paciente .check-item span {
+  font-size: .72rem;
+  font-weight: 500;
+  color: var(--neutral-700);
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+
+html.pagina-paciente .check-item--span2 {
+  grid-column: span 2;
+}
+
+html.pagina-paciente .check-item input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  accent-color: var(--teal-500);
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+}
+
+html.pagina-paciente .check-item input[type="checkbox"]:checked + span {
+  color: var(--teal-700);
+}
+
+/* ── FIELDS ───────────────────────────────────────────────── */
+html.pagina-paciente .field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+html.pagina-paciente .field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+html.pagina-paciente .field--inline .field__label {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+html.pagina-paciente .field__label {
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  color: var(--neutral-500);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+html.pagina-paciente .field__input {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .82rem;
+  color: var(--neutral-900);
+  background: var(--white);
+  outline: none;
+  transition: border-color .18s, box-shadow .18s;
+  -webkit-appearance: none;
+}
+
+html.pagina-paciente .field__input--sm {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+html.pagina-paciente .field__input::placeholder { color: var(--neutral-300); }
+
+html.pagina-paciente .field__input:focus {
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px rgba(26,168,152,.11);
+}
+
+html.pagina-paciente .field__input:hover:not(:focus) {
+  border-color: var(--neutral-300);
+}
+
+html.pagina-paciente .field__textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .82rem;
+  color: var(--neutral-900);
+  background: var(--white);
+  outline: none;
+  resize: vertical;
+  min-height: 72px;
+  transition: border-color .18s, box-shadow .18s;
+}
+
+html.pagina-paciente .field__textarea::placeholder { color: var(--neutral-300); }
+
+html.pagina-paciente .field__textarea:focus {
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px rgba(26,168,152,.11);
+}
+
+/* ── FORM GRIDS ───────────────────────────────────────────── */
+html.pagina-paciente .form-grid {
+  display: grid;
+  gap: 12px 14px;
+  align-items: start;
+}
+
+html.pagina-paciente .form-grid--3 { grid-template-columns: repeat(3, 1fr); }
+html.pagina-paciente .form-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+/* ── SUB GROUPS ───────────────────────────────────────────── */
+html.pagina-paciente .sub-group {
+  padding: 0;
+}
+
+html.pagina-paciente .sub-label {
+  display: block;
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  color: var(--neutral-600);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-left: 2px;
+}
+
+html.pagina-paciente .bold-label {
+  font-weight: 700;
+  color: var(--neutral-800);
+}
+
+/* ── SPACING UTILITIES ────────────────────────────────────── */
+html.pagina-paciente .mt-6  { margin-top: 6px; }
+html.pagina-paciente .mt-10 { margin-top: 10px; }
+html.pagina-paciente .mt-12 { margin-top: 12px; }
+html.pagina-paciente .mt-14 { margin-top: 14px; }
+html.pagina-paciente .mt-16 { margin-top: 16px; }
+
+/* ── BODY DIAGRAM ─────────────────────────────────────────── */
+html.pagina-paciente .body-diagram {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 16px 0 8px;
+}
+
+html.pagina-paciente .body-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+html.pagina-paciente .figure-label {
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: var(--teal-700);
+  text-transform: uppercase;
+}
+
+html.pagina-paciente .body-svg {
+  width: 90px;
+  height: 200px;
+  cursor: crosshair;
+}
+
+/* ── UPLOAD SECTION ───────────────────────────────────────── */
+html.pagina-paciente .card--upload {
+  border: 2px dashed var(--teal-300);
+  background: var(--teal-50);
+}
+
+html.pagina-paciente .card__title--upload {
+  color: var(--teal-700);
+}
+
+html.pagina-paciente .upload-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+html.pagina-paciente .upload-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 160px;
+  height: 140px;
+  border: 1.5px dashed var(--teal-300);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  cursor: pointer;
+  transition: background .18s, border-color .18s, transform .12s;
+}
+
+html.pagina-paciente .upload-zone:hover {
+  background: var(--teal-100);
+  border-color: var(--teal-500);
+  transform: translateY(-2px);
+}
+
+html.pagina-paciente .upload-zone__icon {
+  color: var(--neutral-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html.pagina-paciente .upload-zone__icon--down { color: var(--neutral-800); }
+html.pagina-paciente .upload-zone__icon--up   { color: var(--teal-600); }
+
+html.pagina-paciente .upload-zone__label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  color: var(--neutral-600);
+  text-transform: uppercase;
+}
+
+/* ── FORM FOOTER ──────────────────────────────────────────── */
+html.pagina-paciente .form-footer {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 18px 24px 22px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--neutral-200);
+}
+
+html.pagina-paciente .progress-bar {
+  height: 3px;
+  background: var(--neutral-200);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+html.pagina-paciente .progress-bar__fill {
+  height: 100%;
+  width: 66%;
+  background: linear-gradient(90deg, var(--teal-300), var(--teal-500));
+  border-radius: 99px;
+}
+
+html.pagina-paciente .form-footer__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+html.pagina-paciente .pagination {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+html.pagina-paciente .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--neutral-300);
+  transition: background .2s, transform .2s;
+}
+
+html.pagina-paciente .dot--active {
+  background: var(--teal-500);
+  transform: scale(1.3);
+}
+
+/* ── BUTTONS ──────────────────────────────────────────────── */
+html.pagina-paciente .btn-salvar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 26px;
+  background: var(--teal-500);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .77rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition: background .18s, box-shadow .18s, transform .12s;
+}
+
+html.pagina-paciente .btn-salvar:hover {
+  background: var(--teal-700);
+  box-shadow: 0 6px 20px rgba(26,168,152,.42);
+}
+
+html.pagina-paciente .btn-salvar:active { transform: scale(.97); }
+
+html.pagina-paciente .btn-voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  background: transparent;
+  color: var(--neutral-600);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-md);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .77rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+
+html.pagina-paciente .btn-voltar:hover {
+  background: var(--neutral-100);
+  color: var(--neutral-900);
+  border-color: var(--neutral-400);
+}
+
+/* ── SCROLLBAR ────────────────────────────────────────────── */
+html.pagina-paciente ::-webkit-scrollbar { width: 5px; }
+html.pagina-paciente ::-webkit-scrollbar-track { background: transparent; }
+html.pagina-paciente ::-webkit-scrollbar-thumb {
+  background: var(--neutral-300);
+  border-radius: 99px;
+}
+html.pagina-paciente ::-webkit-scrollbar-thumb:hover { background: var(--teal-300); }
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 960px) {
+  html.pagina-paciente .check-grid--5 { grid-template-columns: repeat(3, 1fr); }
+  html.pagina-paciente .check-grid--6 { grid-template-columns: repeat(3, 1fr); }
+  html.pagina-paciente .form-grid--4  { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  html.pagina-paciente { --sidebar-w: 0px; }
+  html.pagina-paciente .sidebar { display: none; }
+  html.pagina-paciente .main { margin-left: 0; padding: 18px 14px 56px; }
+  html.pagina-paciente .check-grid--3,
+  html.pagina-paciente .check-grid--4,
+  html.pagina-paciente .check-grid--5,
+  html.pagina-paciente .check-grid--6 { grid-template-columns: repeat(2, 1fr); }
+  html.pagina-paciente .form-grid--3,
+  html.pagina-paciente .form-grid--4 { grid-template-columns: 1fr 1fr; }
+  html.pagina-paciente .upload-grid { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 420px) {
+  html.pagina-paciente .check-grid--2,
+  html.pagina-paciente .check-grid--3,
+  html.pagina-paciente .check-grid--4,
+  html.pagina-paciente .check-grid--5,
+  html.pagina-paciente .check-grid--6 { grid-template-columns: 1fr; }
+}
